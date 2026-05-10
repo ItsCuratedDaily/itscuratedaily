@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .nav {
   background: white;
   border-bottom: 1px solid #ddd;
