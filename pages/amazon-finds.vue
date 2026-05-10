@@ -85,7 +85,7 @@ export default {
           name: 'Kitchen Essentials',
           products: [
             { name: 'Lefton Pull-Down Kitchen Faucet', description: 'Pull-Down Kitchen Faucet with Temperature Display in Fahrenheit, 3 Water Outlet Modes, Matte Black', image: '/assets/products/kitchen-faucet.jpg', link: 'https://www.amazon.com/dp/B0FC1TR2FM' },
-            { name: 'Knife Set', description: 'Professional grade', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=knife+set' },
+            { name: 'Jenaluca Herb Scissors', description: 'Herb Scissors with 5 Stainless Steel Blades, Cleaning Comb & Protective Cover', image: '/assets/products/herb-scissors.jpg', link: 'https://www.amazon.com/Jenaluca-Herb-Scissors-Blades-Cover/dp/B00LRKMK96/' },
             { name: 'Blender', description: 'High-powered', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=blender' },
             { name: 'Food Storage', description: 'Glass containers', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=food+storage' }
           ]
