@@ -19,9 +19,9 @@
 
     <!-- Mobile Menu -->
     <div v-if="menuOpen" class="mobile-menu">
+      <a href="/amazon-finds" @click="menuOpen = false">Amazon Finds</a>
       <a href="#why" @click="menuOpen = false">Why Collaborate</a>
       <a href="#collab" @click="menuOpen = false">Collaborations</a>
-      <a href="#amazon" @click="menuOpen = false">Amazon Finds</a>
       <a href="#target" @click="menuOpen = false">Target Finds</a>
       <a href="#blog" @click="menuOpen = false">From my Blog</a>
       <a href="#about" @click="menuOpen = false">Meet Elen</a>
