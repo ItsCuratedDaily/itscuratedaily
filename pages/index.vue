@@ -365,7 +365,7 @@ body {
 
 /* Hero */
 .hero {
-  height: 750px;
+  height: 900px;
   overflow: hidden;
   position: relative;
 }
@@ -379,7 +379,7 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    height: 400px;
+    height: 480px;
   }
 }
 
