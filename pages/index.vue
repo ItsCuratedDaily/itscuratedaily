@@ -9,7 +9,7 @@
         </button>
       </div>
       <div class="nav-center">
-        <div class="logo">ItsCuratedDaily</div>
+        <a href="/" class="logo">ItsCuratedDaily</a>
       </div>
       <div class="nav-right">
         <span class="nav-icon">👤</span>
@@ -241,21 +241,23 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  width: 30px;
-  height: 24px;
+  gap: 5px;
+  width: auto;
+  height: auto;
   justify-content: center;
+  align-items: center;
+  z-index: 101;
 }
 
 .hamburger span {
   display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--text-dark);
-  transition: all 0.3s;
+  width: 22px;
+  height: 2.5px;
+  background-color: #1a1a1a;
+  transition: all 0.3s ease;
 }
 
 .nav-center {
@@ -264,12 +266,20 @@ body {
 }
 
 .logo {
-  font-family: 'Playfair Display', 'Georgia', serif;
+  font-family: 'Playfair Display', 'Didot', 'Bodoni', serif;
   font-weight: 400;
-  font-size: 24px;
-  letter-spacing: 4px;
-  color: var(--text-dark);
+  font-size: 26px;
+  letter-spacing: 6px;
+  color: #1a1a1a;
   text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.7;
 }
 
 .nav-right {
