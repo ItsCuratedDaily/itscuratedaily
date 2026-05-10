@@ -11,8 +11,7 @@
     </nav>
 
     <section class="hero-section">
-      <h1>Amazon Finds</h1>
-      <p>Carefully curated products we love</p>
+      <img src="/assets/amazon-finds-hero.jpg" alt="Amazon Finds" class="hero-bg">
     </section>
 
     <section class="content">
@@ -205,20 +204,16 @@ html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
 }
 
 .hero-section {
-  background: #f8f6f3;
-  padding: 60px 40px;
-  text-align: center;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
 }
 
-.hero-section h1 {
-  font-size: 48px;
-  margin-bottom: 12px;
-  color: #1a1a1a;
-}
-
-.hero-section p {
-  font-size: 18px;
-  color: #666;
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content {
@@ -410,8 +405,7 @@ html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
   .nav { padding: 15px 20px; }
   .products-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
   .product-img { height: 180px; }
-  .hero-section { padding: 40px 20px; }
-  .hero-section h1 { font-size: 32px; }
+  .hero-section { height: 400px; }
   
   .footer-grid {
     padding: 40px 15px;
