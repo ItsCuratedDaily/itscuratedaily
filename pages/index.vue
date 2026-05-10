@@ -154,35 +154,34 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-new">
-      <div class="footer-content">
-        <div class="footer-image">
+    <footer class="footer-nabela">
+      <div class="footer-wrapper">
+        <div class="footer-image-col">
           <img src="/assets/profile.jpg" alt="Elen Hovsepian">
         </div>
-        <div class="footer-columns">
-          <div class="footer-column">
-            <h3>About</h3>
+        <div class="footer-text-cols">
+          <div class="footer-col">
+            <h3>AMAZON FINDS</h3>
             <ul>
-              <li><a href="#about">Our Story</a></li>
-              <li><a href="#collab">Collaborations</a></li>
-              <li><a href="#about">Contact Us</a></li>
+              <li><a href="#amazon">FEATURED PICKS</a></li>
+              <li><a href="#amazon">BEST SELLERS</a></li>
+              <li><a href="#amazon">SHOP NOW</a></li>
             </ul>
           </div>
-          <div class="footer-column">
-            <h3>Explore</h3>
+          <div class="footer-col">
+            <h3>SHOP</h3>
             <ul>
-              <li><a href="#why">Why Collaborate</a></li>
-              <li><a href="#amazon">Amazon Finds</a></li>
-              <li><a href="#target">Target Finds</a></li>
-              <li><a href="#blog">From my Blog</a></li>
+              <li><a href="#target">TARGET FINDS</a></li>
+              <li><a href="#collab">COLLABORATIONS</a></li>
+              <li><a href="#recent">RECENT POSTS</a></li>
             </ul>
           </div>
-          <div class="footer-column">
-            <h3>Connect</h3>
+          <div class="footer-col">
+            <h3>DISCOVER</h3>
             <ul>
-              <li><a href="https://instagram.com/itscurateddaily" target="_blank">Instagram</a></li>
-              <li><a href="#about">Email</a></li>
-              <li><a href="/">ItsCuratedDaily.com</a></li>
+              <li><a href="#about">MEET ELEN</a></li>
+              <li><a href="#blog">FROM MY BLOG</a></li>
+              <li><a href="#why">WHY COLLABORATE</a></li>
             </ul>
           </div>
         </div>
@@ -519,72 +518,71 @@ body {
   font-weight: 600;
 }
 
-/* Footer */
-.footer-new {
-  background: var(--primary);
+/* Footer - Nabela Style */
+.footer-nabela {
+  background-color: #e8dfd5;
   padding: 80px 60px;
-  margin-top: 80px;
+  margin-top: 0;
 }
 
-.footer-content {
-  max-width: 1400px;
+.footer-wrapper {
+  max-width: 1600px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 100px;
+  grid-template-columns: 300px 1fr;
+  gap: 120px;
   align-items: flex-start;
 }
 
-.footer-image {
-  width: 280px;
-  height: 350px;
-  overflow: hidden;
-  border-radius: 4px;
+.footer-image-col {
+  width: 300px;
 }
 
-.footer-image img {
+.footer-image-col img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
-.footer-columns {
+.footer-text-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  gap: 80px;
 }
 
-.footer-column h3 {
+.footer-col h3 {
   font-family: 'Playfair Display', 'Didot', serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--text);
-  margin-bottom: 24px;
+  color: #2a2a2a;
+  margin-bottom: 35px;
 }
 
-.footer-column ul {
+.footer-col ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.footer-column li {
-  margin-bottom: 12px;
+.footer-col li {
+  margin-bottom: 20px;
 }
 
-.footer-column a {
-  font-size: 13px;
-  color: var(--text-light);
+.footer-col a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #2a2a2a;
   text-decoration: none;
-  transition: color 0.3s;
-  cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
+  transition: opacity 0.3s;
 }
 
-.footer-column a:hover {
-  color: var(--text);
+.footer-col a:hover {
+  opacity: 0.6;
 }
 
 @media (max-width: 768px) {

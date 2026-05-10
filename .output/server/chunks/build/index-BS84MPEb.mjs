@@ -1,0 +1,51 @@
+import { mergeProps, useSSRContext } from 'vue';
+import { ssrRenderAttrs, ssrRenderClass, ssrRenderAttr } from 'vue/server-renderer';
+import { p as publicAssetsURL } from '../routes/renderer.mjs';
+import { _ as _export_sfc } from './server.mjs';
+import 'vue-bundle-renderer/runtime';
+import '../nitro/nitro.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:path';
+import 'node:crypto';
+import 'node:url';
+import 'unhead/server';
+import 'devalue';
+import 'unhead/utils';
+import 'unhead/plugins';
+import 'vue-router';
+
+const _imports_0 = publicAssetsURL("/assets/post-1.jpg");
+const _imports_1 = publicAssetsURL("/assets/post-2.jpg");
+const _imports_2 = publicAssetsURL("/assets/post-3.jpg");
+const _imports_3 = publicAssetsURL("/assets/post-4.jpg");
+const _imports_4 = publicAssetsURL("/assets/profile.jpg");
+const _sfc_main = {
+  data() {
+    return {
+      menuOpen: false
+    };
+  }
+};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "home" }, _attrs))} data-v-41c689c8><nav class="nav" data-v-41c689c8><div class="nav-left" data-v-41c689c8><button class="${ssrRenderClass([{ active: $data.menuOpen }, "hamburger"])}" data-v-41c689c8><span data-v-41c689c8></span><span data-v-41c689c8></span><span data-v-41c689c8></span></button></div><div class="nav-center" data-v-41c689c8><a href="/" class="logo" data-v-41c689c8>ItsCuratedDaily</a></div><div class="nav-right" data-v-41c689c8><span class="nav-icon" data-v-41c689c8>\u{1F464}</span><span class="nav-icon" data-v-41c689c8>\u{1F6CD}\uFE0F</span></div></nav>`);
+  if ($data.menuOpen) {
+    _push(`<div class="mobile-menu" data-v-41c689c8><a href="#why" data-v-41c689c8>Why Collaborate</a><a href="#collab" data-v-41c689c8>Collaborations</a><a href="#amazon" data-v-41c689c8>Amazon Finds</a><a href="#target" data-v-41c689c8>Target Finds</a><a href="#blog" data-v-41c689c8>From my Blog</a><a href="#about" data-v-41c689c8>Meet Elen</a><a href="#recent" data-v-41c689c8>Recent Posts</a></div>`);
+  } else {
+    _push(`<!---->`);
+  }
+  _push(`<section class="hero" data-v-41c689c8><div class="hero-bg" data-v-41c689c8></div></section><section class="section why-bg" id="why" data-v-41c689c8><div class="wrap" data-v-41c689c8><h2 data-v-41c689c8>Why Collaborate With Us?</h2><p class="section-desc" data-v-41c689c8>Partner with ItsCuratedDaily for authentic, premium content</p><div class="features-grid" data-v-41c689c8><div class="feature-card" data-v-41c689c8><div class="feature-num" data-v-41c689c8>01</div><h3 data-v-41c689c8>Authentic Audience</h3><p data-v-41c689c8>Real people with real purchasing power who trust recommendations.</p></div><div class="feature-card" data-v-41c689c8><div class="feature-num" data-v-41c689c8>02</div><h3 data-v-41c689c8>Premium Aesthetic</h3><p data-v-41c689c8>High-quality, luxury content that elevates your brand&#39;s presence.</p></div><div class="feature-card" data-v-41c689c8><div class="feature-num" data-v-41c689c8>03</div><h3 data-v-41c689c8>Conversion Focus</h3><p data-v-41c689c8>Amazon affiliate expertise with proven conversion rates.</p></div><div class="feature-card" data-v-41c689c8><div class="feature-num" data-v-41c689c8>04</div><h3 data-v-41c689c8>Full Transparency</h3><p data-v-41c689c8>Real-time analytics and performance tracking for every campaign.</p></div></div></div></section><section class="section collab-bg" id="collab" data-v-41c689c8><div class="wrap" data-v-41c689c8><h2 data-v-41c689c8>Recent Collaborations</h2><p class="section-desc" data-v-41c689c8>Featured brand partnerships</p><div class="grid" data-v-41c689c8><img${ssrRenderAttr("src", _imports_0)} alt="Collaboration 1" data-v-41c689c8><img${ssrRenderAttr("src", _imports_1)} alt="Collaboration 2" data-v-41c689c8><img${ssrRenderAttr("src", _imports_2)} alt="Collaboration 3" data-v-41c689c8><img${ssrRenderAttr("src", _imports_3)} alt="Collaboration 4" data-v-41c689c8></div></div></section><section class="section amazon-bg" id="amazon" data-v-41c689c8><div class="wrap" data-v-41c689c8><h2 data-v-41c689c8>Amazon Finds</h2><p class="section-desc" data-v-41c689c8>Carefully curated products we love</p><div class="grid" data-v-41c689c8><img${ssrRenderAttr("src", _imports_0)} alt="Amazon Find 1" data-v-41c689c8><img${ssrRenderAttr("src", _imports_1)} alt="Amazon Find 2" data-v-41c689c8><img${ssrRenderAttr("src", _imports_2)} alt="Amazon Find 3" data-v-41c689c8><img${ssrRenderAttr("src", _imports_3)} alt="Amazon Find 4" data-v-41c689c8></div></div></section><section class="section target-bg" id="target" data-v-41c689c8><div class="wrap" data-v-41c689c8><h2 data-v-41c689c8>Target Finds</h2><p class="section-desc" data-v-41c689c8>Trending picks from Target</p><div class="grid" data-v-41c689c8><img${ssrRenderAttr("src", _imports_0)} alt="Target Find 1" data-v-41c689c8><img${ssrRenderAttr("src", _imports_1)} alt="Target Find 2" data-v-41c689c8><img${ssrRenderAttr("src", _imports_2)} alt="Target Find 3" data-v-41c689c8><img${ssrRenderAttr("src", _imports_3)} alt="Target Find 4" data-v-41c689c8></div></div></section><section class="section blog-bg" id="blog" data-v-41c689c8><div class="wrap" data-v-41c689c8><h2 data-v-41c689c8>From my Blog</h2><p class="section-desc" data-v-41c689c8>Stories, insights, and inspiration</p><div class="grid" data-v-41c689c8><img${ssrRenderAttr("src", _imports_0)} alt="Blog 1" data-v-41c689c8><img${ssrRenderAttr("src", _imports_1)} alt="Blog 2" data-v-41c689c8><img${ssrRenderAttr("src", _imports_2)} alt="Blog 3" data-v-41c689c8><img${ssrRenderAttr("src", _imports_3)} alt="Blog 4" data-v-41c689c8></div></div></section><section class="section meet-bg" id="about" data-v-41c689c8><div class="wrap" data-v-41c689c8><div class="about-grid" data-v-41c689c8><img${ssrRenderAttr("src", _imports_4)} alt="Elen" data-v-41c689c8><div class="about-content" data-v-41c689c8><h2 data-v-41c689c8>Meet Elen</h2><p class="subtitle" data-v-41c689c8>Creator | Curator | Entrepreneur</p><p data-v-41c689c8>Elen is a dedicated content creator with a passion for high-quality, luxury lifestyle content. With over 4,000 engaged followers, she specializes in carefully selected Amazon affiliate products.</p><p data-v-41c689c8>Built on authenticity and trust, ItsCuratedDaily partners with premium brands to create meaningful connections with an audience that values quality and real recommendations.</p><div class="stats" data-v-41c689c8><div data-v-41c689c8><h3 data-v-41c689c8>4,000+</h3><p data-v-41c689c8>Followers</p></div><div data-v-41c689c8><h3 data-v-41c689c8>85%+</h3><p data-v-41c689c8>Engagement</p></div><div data-v-41c689c8><h3 data-v-41c689c8>100%</h3><p data-v-41c689c8>Authentic</p></div></div></div></div></div></section><section class="section recent-bg" id="recent" data-v-41c689c8><div class="wrap" data-v-41c689c8><h2 data-v-41c689c8>Recent Posts</h2><p class="section-desc" data-v-41c689c8>Latest updates from ItsCuratedDaily</p><div class="grid" data-v-41c689c8><img${ssrRenderAttr("src", _imports_0)} alt="Recent 1" data-v-41c689c8><img${ssrRenderAttr("src", _imports_1)} alt="Recent 2" data-v-41c689c8><img${ssrRenderAttr("src", _imports_2)} alt="Recent 3" data-v-41c689c8><img${ssrRenderAttr("src", _imports_3)} alt="Recent 4" data-v-41c689c8></div></div></section><footer class="footer-nabela" data-v-41c689c8><div class="footer-wrapper" data-v-41c689c8><div class="footer-image-col" data-v-41c689c8><img${ssrRenderAttr("src", _imports_4)} alt="Elen Hovsepian" data-v-41c689c8></div><div class="footer-text-cols" data-v-41c689c8><div class="footer-col" data-v-41c689c8><h3 data-v-41c689c8>AMAZON FINDS</h3><ul data-v-41c689c8><li data-v-41c689c8><a href="#amazon" data-v-41c689c8>FEATURED PICKS</a></li><li data-v-41c689c8><a href="#amazon" data-v-41c689c8>BEST SELLERS</a></li><li data-v-41c689c8><a href="#amazon" data-v-41c689c8>SHOP NOW</a></li></ul></div><div class="footer-col" data-v-41c689c8><h3 data-v-41c689c8>SHOP</h3><ul data-v-41c689c8><li data-v-41c689c8><a href="#target" data-v-41c689c8>TARGET FINDS</a></li><li data-v-41c689c8><a href="#collab" data-v-41c689c8>COLLABORATIONS</a></li><li data-v-41c689c8><a href="#recent" data-v-41c689c8>RECENT POSTS</a></li></ul></div><div class="footer-col" data-v-41c689c8><h3 data-v-41c689c8>DISCOVER</h3><ul data-v-41c689c8><li data-v-41c689c8><a href="#about" data-v-41c689c8>MEET ELEN</a></li><li data-v-41c689c8><a href="#blog" data-v-41c689c8>FROM MY BLOG</a></li><li data-v-41c689c8><a href="#why" data-v-41c689c8>WHY COLLABORATE</a></li></ul></div></div></div></footer></div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/index.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-41c689c8"]]);
+
+export { index as default };
+//# sourceMappingURL=index-BS84MPEb.mjs.map
