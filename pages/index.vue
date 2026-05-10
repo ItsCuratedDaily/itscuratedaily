@@ -20,12 +20,12 @@
     <!-- Mobile Menu -->
     <div v-if="menuOpen" class="mobile-menu">
       <a href="/amazon-finds" @click="menuOpen = false">Amazon Finds</a>
+      <a href="/target-finds" @click="menuOpen = false">Target Finds</a>
+      <a href="/collaborations" @click="menuOpen = false">Collaborations</a>
+      <a href="/blog" @click="menuOpen = false">From my Blog</a>
+      <a href="/recent-posts" @click="menuOpen = false">Recent Posts</a>
       <a href="#why" @click="menuOpen = false">Why Collaborate</a>
-      <a href="#collab" @click="menuOpen = false">Collaborations</a>
-      <a href="#target" @click="menuOpen = false">Target Finds</a>
-      <a href="#blog" @click="menuOpen = false">From my Blog</a>
       <a href="#about" @click="menuOpen = false">Meet Elen</a>
-      <a href="#recent" @click="menuOpen = false">Recent Posts</a>
     </div>
 
     <!-- Hero -->
@@ -66,8 +66,13 @@
     <!-- Recent Collaborations -->
     <section class="section collab-bg" id="collab">
       <div class="wrap">
-        <h2>Recent Collaborations</h2>
-        <p class="section-desc">Featured brand partnerships</p>
+        <div class="section-header">
+          <div>
+            <h2>Recent Collaborations</h2>
+            <p class="section-desc">Featured brand partnerships</p>
+          </div>
+          <a href="/collaborations" class="see-more">See More →</a>
+        </div>
         <div class="grid">
           <img src="/assets/post-1.jpg" alt="Collaboration 1">
           <img src="/assets/post-2.jpg" alt="Collaboration 2">
@@ -80,8 +85,13 @@
     <!-- Amazon Finds -->
     <section class="section amazon-bg" id="amazon">
       <div class="wrap">
-        <h2>Amazon Finds</h2>
-        <p class="section-desc">Carefully curated products we love</p>
+        <div class="section-header">
+          <div>
+            <h2>Amazon Finds</h2>
+            <p class="section-desc">Carefully curated products we love</p>
+          </div>
+          <a href="/amazon-finds" class="see-more">See More →</a>
+        </div>
         <div class="grid">
           <img src="/assets/post-1.jpg" alt="Amazon Find 1">
           <img src="/assets/post-2.jpg" alt="Amazon Find 2">
@@ -94,8 +104,13 @@
     <!-- Target Finds -->
     <section class="section target-bg" id="target">
       <div class="wrap">
-        <h2>Target Finds</h2>
-        <p class="section-desc">Trending picks from Target</p>
+        <div class="section-header">
+          <div>
+            <h2>Target Finds</h2>
+            <p class="section-desc">Trending picks from Target</p>
+          </div>
+          <a href="/target-finds" class="see-more">See More →</a>
+        </div>
         <div class="grid">
           <img src="/assets/post-1.jpg" alt="Target Find 1">
           <img src="/assets/post-2.jpg" alt="Target Find 2">
@@ -108,8 +123,13 @@
     <!-- From my Blog -->
     <section class="section blog-bg" id="blog">
       <div class="wrap">
-        <h2>From my Blog</h2>
-        <p class="section-desc">Stories, insights, and inspiration</p>
+        <div class="section-header">
+          <div>
+            <h2>From my Blog</h2>
+            <p class="section-desc">Stories, insights, and inspiration</p>
+          </div>
+          <a href="/blog" class="see-more">See More →</a>
+        </div>
         <div class="grid">
           <img src="/assets/post-1.jpg" alt="Blog 1">
           <img src="/assets/post-2.jpg" alt="Blog 2">
@@ -142,8 +162,13 @@
     <!-- Recent Posts -->
     <section class="section recent-bg" id="recent">
       <div class="wrap">
-        <h2>Recent Posts</h2>
-        <p class="section-desc">Latest updates from ItsCuratedDaily</p>
+        <div class="section-header">
+          <div>
+            <h2>Recent Posts</h2>
+            <p class="section-desc">Latest updates from ItsCuratedDaily</p>
+          </div>
+          <a href="/recent-posts" class="see-more">See More →</a>
+        </div>
         <div class="grid">
           <img src="/assets/post-1.jpg" alt="Recent 1">
           <img src="/assets/post-2.jpg" alt="Recent 2">
