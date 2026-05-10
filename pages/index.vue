@@ -17,6 +17,13 @@
       </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div v-if="menuOpen" class="mobile-menu">
+      <a href="#about" @click="menuOpen = false">About</a>
+      <a href="#packages" @click="menuOpen = false">Packages</a>
+      <a href="#contact" @click="menuOpen = false">Contact</a>
+    </div>
+
     <section class="hero">
       <div class="hero-bg"></div>
     </section>
@@ -293,6 +300,38 @@ body {
 .nav-icon {
   font-size: 20px;
   cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu a {
+  padding: 20px 40px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 16px;
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.mobile-menu a:hover {
+  background-color: var(--primary);
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none;
 }
 
 /* Hero */
