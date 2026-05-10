@@ -559,8 +559,7 @@ body {
   font-weight: 400;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #e8dfd5;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
 }
 
 .footer-grid-cols {
