@@ -365,7 +365,7 @@ body {
 
 /* Hero */
 .hero {
-  height: 1170px;
+  height: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -374,12 +374,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: bottom;
   display: block;
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 624px;
+    height: 350px;
   }
 }
 
