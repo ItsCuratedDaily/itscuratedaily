@@ -43,14 +43,15 @@ export default {
 <style scoped>
 .nav {
   background: white;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid #ddd;
+  padding: 24px 40px;
   position: sticky;
   top: 0;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-left {
@@ -127,12 +128,20 @@ export default {
 }
 
 .logo {
-  font-size: 24px;
-  text-decoration: none;
+  font-family: 'Playfair Display', 'Didot', 'Bodoni', serif;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 6px;
   color: #1a1a1a;
-  font-weight: 600;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.7;
 }
 
 .nav-icon {
