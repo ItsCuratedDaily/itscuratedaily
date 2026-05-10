@@ -1,32 +1,6 @@
 <template>
   <div class="home">
-    <nav class="nav">
-      <div class="nav-left">
-        <button class="hamburger" @click="menuOpen = !menuOpen" :class="{ active: menuOpen }">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-      <div class="nav-center">
-        <a href="/" class="logo">ItsCuratedDaily</a>
-      </div>
-      <div class="nav-right">
-        <span class="nav-icon">👤</span>
-        <span class="nav-icon">🛍️</span>
-      </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div v-if="menuOpen" class="mobile-menu">
-      <a href="/amazon-finds" @click="menuOpen = false">Amazon Finds</a>
-      <a href="/target-finds" @click="menuOpen = false">Target Finds</a>
-      <a href="/collaborations" @click="menuOpen = false">Collaborations</a>
-      <a href="/blog" @click="menuOpen = false">From my Blog</a>
-      <a href="/recent-posts" @click="menuOpen = false">Recent Posts</a>
-      <a href="#why" @click="menuOpen = false">Why Collaborate</a>
-      <a href="#about" @click="menuOpen = false">Meet Elen</a>
-    </div>
+    <AppHeader />
 
     <!-- Hero -->
     <section class="hero">
@@ -215,10 +189,8 @@
 
 <script>
 export default {
-  data() {
-    return {
-      menuOpen: false
-    }
+  components: {
+    AppHeader: () => import('~/components/AppHeader.vue')
   }
 }
 </script>
@@ -259,115 +231,6 @@ body {
 }
 
 /* Nav */
-.nav {
-  background: white;
-  border-bottom: 1px solid var(--border);
-  padding: 24px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.nav-left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.hamburger {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: auto;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  z-index: 101;
-}
-
-.hamburger span {
-  display: block;
-  width: 22px;
-  height: 2.5px;
-  background-color: #1a1a1a;
-  transition: all 0.3s ease;
-}
-
-.nav-center {
-  flex: 1;
-  text-align: center;
-}
-
-.logo {
-  font-family: 'Playfair Display', 'Didot', 'Bodoni', serif;
-  font-weight: 400;
-  font-size: 26px;
-  letter-spacing: 6px;
-  color: #1a1a1a;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-  transition: opacity 0.3s;
-  display: inline-block;
-}
-
-.logo:hover {
-  opacity: 0.7;
-}
-
-.nav-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  align-items: center;
-}
-
-.nav-icon {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-/* Mobile Menu */
-.mobile-menu {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background: white;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  z-index: 100;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-menu a {
-  padding: 20px 40px;
-  text-decoration: none;
-  color: var(--text);
-  font-size: 16px;
-  border-bottom: 1px solid var(--border);
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
-
-.mobile-menu a:hover {
-  background-color: var(--primary);
-}
-
-.mobile-menu a:last-child {
-  border-bottom: none;
-}
-
 /* Hero */
 .hero {
   height: 850px;
