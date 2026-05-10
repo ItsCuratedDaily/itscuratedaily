@@ -39,7 +39,7 @@ export default {
         {
           name: 'Home Essentials',
           products: [
-            { name: 'Luxury Bedding', description: '400 thread count cotton', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=luxury+bedding' },
+            { name: 'Tineco Floor ONE S5', description: 'Smart Cordless Wet Dry Vacuum Cleaner and Mop for Hard Floors, Digital Display, Long Run Time, Great for Sticky Messes and Pet Hair', image: '/assets/products/tineco-vacuum.jpg', link: 'https://www.amazon.com/s?k=Tineco+Floor+ONE+S5' },
             { name: 'Throw Pillows', description: 'Decorative comfort', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=throw+pillows' },
             { name: 'Ambient Lighting', description: 'Smart LED lights', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=ambient+lighting' },
             { name: 'Area Rug', description: 'Elegant floor accent', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=area+rug' }
@@ -75,7 +75,7 @@ export default {
         {
           name: 'Beauty Essentials',
           products: [
-            { name: 'Facial Cleanser', description: 'All skin types', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=facial+cleanser' },
+            { name: 'Beauty Pie C-Wave LED Glove', description: 'Rejuvenating LED Treatment for Hands – Red + Near-Infrared Light Therapy for Age Spots, Pigmentation & Firming', image: '/assets/products/beauty-pie-led-glove.jpg', link: 'https://www.amazon.com/dp/B0FQJYSV7L' },
             { name: 'Moisturizer', description: 'Hydrating formula', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=moisturizer' },
             { name: 'Face Mask', description: 'Weekly treatment', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=face+mask' },
             { name: 'Hair Serum', description: 'Smoothing treatment', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=hair+serum' }
@@ -86,8 +86,8 @@ export default {
           products: [
             { name: 'Lefton Pull-Down Kitchen Faucet', description: 'Pull-Down Kitchen Faucet with Temperature Display in Fahrenheit, 3 Water Outlet Modes, Matte Black', image: '/assets/products/kitchen-faucet.jpg', link: 'https://www.amazon.com/dp/B0FC1TR2FM' },
             { name: 'Jenaluca Herb Scissors', description: 'Herb Scissors with 5 Stainless Steel Blades, Cleaning Comb & Protective Cover', image: '/assets/products/herb-scissors.jpg', link: 'https://www.amazon.com/Jenaluca-Herb-Scissors-Blades-Cover/dp/B00LRKMK96/' },
-            { name: 'Blender', description: 'High-powered', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=blender' },
-            { name: 'Food Storage', description: 'Glass containers', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=food+storage' }
+            { name: 'Meat Claws Chicken Shredder', description: 'Chicken Shredder Tool for Pulled Pork, BBQ, Chicken & Meats — Sturdy & Easy to Use', image: '/assets/products/chicken-shredder.jpg', link: 'https://www.amazon.com/dp/B0FM81W47X' },
+            { name: 'Elxis Portable Food Sealer', description: 'Portable Handheld Vacuum Food Sealer, Reusable, Keeps Food Fresh 6x Longer', image: '/assets/products/food-sealer.jpg', link: 'https://www.amazon.com/Elxis-Portable-handheld-Reusable-pressure/dp/B0GSR77ZPL/' }
           ]
         },
         {
