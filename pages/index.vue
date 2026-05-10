@@ -154,36 +154,54 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-nabela">
-      <div class="footer-wrapper">
-        <div class="footer-image-col">
-          <img src="/assets/profile.jpg" alt="Elen Hovsepian">
+    <footer class="footer-grid">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>ItsCuratedDaily</h2>
         </div>
-        <div class="footer-text-cols">
+        
+        <div class="footer-grid-cols">
           <div class="footer-col">
-            <h3>AMAZON FINDS</h3>
+            <h3>READ</h3>
             <ul>
-              <li><a href="#amazon">FEATURED PICKS</a></li>
-              <li><a href="#amazon">BEST SELLERS</a></li>
-              <li><a href="#amazon">SHOP NOW</a></li>
+              <li><a href="#blog">From My Blog</a></li>
+              <li><a href="#recent">Recent Posts</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h3>SHOP</h3>
             <ul>
-              <li><a href="#target">TARGET FINDS</a></li>
-              <li><a href="#collab">COLLABORATIONS</a></li>
-              <li><a href="#recent">RECENT POSTS</a></li>
+              <li><a href="#amazon">Amazon Finds</a></li>
+              <li><a href="#target">Target Finds</a></li>
+              <li><a href="#collab">Collaborations</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h3>DISCOVER</h3>
+            <h3>SUPPORT</h3>
             <ul>
-              <li><a href="#about">MEET ELEN</a></li>
-              <li><a href="#blog">FROM MY BLOG</a></li>
-              <li><a href="#why">WHY COLLABORATE</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#faq">Advertise With Us</a></li>
+              <li><a href="#contact">Press Kit</a></li>
             </ul>
           </div>
+          <div class="footer-col">
+            <h3>EXPLORE</h3>
+            <ul>
+              <li><a href="#about">Meet Elen</a></li>
+              <li><a href="#why">Why Collaborate</a></li>
+              <li><a href="https://instagram.com/itscurateddaily" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <div class="footer-socials">
+            <a href="https://instagram.com/itscurateddaily" target="_blank" class="social-icon">📷</a>
+            <a href="#" target="_blank" class="social-icon">📌</a>
+          </div>
+          <p class="footer-copy">&copy; 2026 <a href="/">ItsCuratedDaily</a></p>
+          <p class="footer-credit">Site by <a href="#">Design</a></p>
         </div>
       </div>
     </footer>
@@ -518,46 +536,50 @@ body {
   font-weight: 600;
 }
 
-/* Footer - Nabela Style */
-.footer-nabela {
+/* Footer - Grid Layout (Nabela Style) */
+.footer-grid {
   background-color: #e8dfd5;
   padding: 80px 60px;
   margin-top: 0;
 }
 
-.footer-wrapper {
+.footer-container {
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.footer-logo h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #e8dfd5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer-grid-cols {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 120px;
-  align-items: flex-start;
-}
-
-.footer-image-col {
-  width: 300px;
-}
-
-.footer-image-col img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.footer-text-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 80px;
+  margin-bottom: 100px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-col h3 {
-  font-family: 'Playfair Display', 'Didot', serif;
-  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
   font-weight: 400;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #2a2a2a;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .footer-col ul {
@@ -567,22 +589,89 @@ body {
 }
 
 .footer-col li {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .footer-col a {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
   color: #2a2a2a;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   transition: opacity 0.3s;
 }
 
 .footer-col a:hover {
   opacity: 0.6;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #2a2a2a;
+  margin: 0 0 8px 0;
+}
+
+.footer-copy a {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-weight: 600;
+}
+
+.footer-credit {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.footer-credit a {
+  color: #666;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    padding: 40px 20px;
+  }
+  
+  .footer-logo h2 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+  
+  .footer-grid-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-col h3 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
