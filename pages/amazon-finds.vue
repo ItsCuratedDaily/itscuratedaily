@@ -55,7 +55,8 @@ export default {
             { name: 'Motion Sensor Cabinet Lights', description: 'Wireless LED Under Cabinet Lights with Motion Sensor, 3-Pack, Easy Install', image: '/assets/products/motion-sensor-lights.jpg', link: 'https://www.amazon.com/dp/B0DFM5VNTC' },
             { name: 'Anti-Slip Rug Grippers', description: 'Rug Grippers Anti-Slip Rug Tape for Hardwood Floors, Washable & Reusable', image: '/assets/products/rug-grippers.jpg', link: 'https://www.amazon.com/dp/B08313QV22' },
             { name: 'Air Shim Inflatable Bags', description: 'Inflatable Shim Bags 2-Pack for Leveling Doors, Windows & Furniture', image: '/assets/products/air-shim.jpg', link: 'https://www.amazon.com/dp/B09F34QGB6' },
-            { name: 'Smoked Glass Cloche', description: 'Decorative Smoked Glass Cloche with Gold Lion Accent for Home Decor', image: '/assets/products/glass-cloche.jpg', link: 'https://www.amazon.com/dp/B0FKJPDQJ5' }
+            { name: 'Smoked Glass Cloche', description: 'Decorative Smoked Glass Cloche with Gold Lion Accent for Home Decor', image: '/assets/products/glass-cloche.jpg', link: 'https://www.amazon.com/dp/B0FKJPDQJ5' },
+            { name: 'HOTO Cordless Handheld Vacuum', description: 'Portable Handheld Vacuum Cleaner with 6 Attachments, Powerful Suction for Car & Home', image: '/assets/products/hoto-handheld-vacuum.jpg', link: 'https://www.amazon.com/dp/B0F53HMTX5' }
           ]
         },
         {
@@ -101,8 +102,8 @@ export default {
           name: 'Kids Essentials',
           slug: 'kids-essentials',
           products: [
-            { name: 'Baby Stroller', description: 'Lightweight design', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=baby+stroller' },
-            { name: 'Educational Toys', description: 'Interactive learning', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=educational+toys' },
+            { name: 'Fridababy Paci Weaning System', description: 'Dentist-Designed 5-Step Pacifier Weaning System, BPA-Free Silicone, for Babies & Toddlers', image: '/assets/products/fridababy-paci-weaning.jpg', link: 'https://www.amazon.com/dp/B0823DZYQY' },
+            { name: 'Dinosaur Kids Smart Camera', description: 'Kids Digital Camera with Dinosaur Case, 8GB SD Card, Dual Lens, Screen Protector & Lanyard', image: '/assets/products/kids-dino-camera.jpg', link: 'https://www.amazon.com/dp/B0D5C8QZD3' },
             { name: 'Baby Monitor', description: 'HD video + audio', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=baby+monitor' },
             { name: 'Kids Backpack', description: 'School ready', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=kids+backpack' }
           ]
@@ -111,10 +112,10 @@ export default {
           name: 'Office Essentials',
           slug: 'office-essentials',
           products: [
-            { name: 'Ergonomic Chair', description: 'Comfortable support', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=ergonomic+chair' },
-            { name: 'Desk Organizer', description: 'Keep tidy', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=desk+organizer' },
-            { name: 'USB Hub', description: 'Multi-port connector', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=usb+hub' },
-            { name: 'Desk Lamp', description: 'LED with USB', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=desk+lamp' }
+            { name: 'LED Whiteboard Desk Pad', description: 'Glowing LED Light Whiteboard Desk Pad with Ambient Warm Light, Dry Erase Surface for Notes & To-Dos', image: '/assets/products/led-whiteboard-desk-pad.jpg', link: 'https://www.amazon.com/dp/B0CPDD1D6Z' },
+            { name: 'Ergonomic Chair', description: 'Comfortable support', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=ergonomic+chair' },
+            { name: 'Desk Organizer', description: 'Keep tidy', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=desk+organizer' },
+            { name: 'USB Hub', description: 'Multi-port connector', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=usb+hub' }
           ]
         },
         {
