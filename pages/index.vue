@@ -1,24 +1,19 @@
 <template>
   <div class="home">
     <nav class="nav">
-      <div class="nav-wrap">
-        <div class="logo">ItsCuratedDaily</div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#packages">Packages</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <button class="nav-btn" @click="goTo('packages')">Partner</button>
+      <div class="nav-left">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
+      <div class="nav-center">
+        <div class="logo">ItsCuratedDaily</div>
+      </div>
+      <div class="nav-right"></div>
     </nav>
 
     <section class="hero">
-      <img src="/assets/hero.jpg" alt="Hero">
-      <div class="hero-text">
-        <h1>Premium Social Media Content</h1>
-        <p>Luxury lifestyle. Authentic engagement. Real results.</p>
-        <button @click="goTo('packages')">Partner With Us</button>
-      </div>
+      <div class="hero-bg"></div>
     </section>
 
     <section class="about" id="about">
@@ -209,34 +204,24 @@ body {
 .nav {
   background: white;
   border-bottom: 1px solid var(--border);
-  padding: 20px 0;
+  padding: 30px 60px;
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.nav-wrap {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.nav-links {
+.nav-left {
+  flex: 1;
   display: flex;
   gap: 40px;
 }
 
-.nav-links a {
+.nav-link {
   font-size: 14px;
   text-decoration: none;
   color: var(--text-light);
@@ -245,92 +230,31 @@ body {
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
   color: var(--accent);
 }
 
-.nav-btn {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 10px 24px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.3s;
+.nav-center {
+  flex: 1;
+  text-align: center;
 }
 
-.nav-btn:hover {
-  background: var(--accent-dark);
+.logo {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dark);
+}
+
+.nav-right {
+  flex: 1;
 }
 
 /* Hero */
 .hero {
-  position: relative;
-  height: 600px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 2;
-}
-
-.hero-text {
-  position: relative;
-  z-index: 3;
-  color: white;
-  text-align: center;
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 56px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.1;
-}
-
-.hero-text p {
-  font-size: 20px;
-  margin-bottom: 40px;
-  font-weight: 300;
-}
-
-.hero-text button {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 14px 40px;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.hero-text button:hover {
-  background: var(--accent-dark);
+  height: 400px;
+  background-color: #d9d9d9;
 }
 
 /* About */
