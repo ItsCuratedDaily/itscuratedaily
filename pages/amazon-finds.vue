@@ -5,10 +5,13 @@
     </section>
 
     <section class="amazon-content">
-      <div class="wrap">
-        <div v-for="category in categories" :key="category.name" class="category-block">
+      <div v-for="category in categories" :key="category.name" class="category-block">
+        <div class="category-header wrap">
           <h2>{{ category.name }}</h2>
-          <div class="products-grid">
+          <a :href="'/amazon-finds/' + category.slug" class="see-more-link">See More {{ category.name }} →</a>
+        </div>
+        <div class="scroll-row">
+          <div class="scroll-inner">
             <a v-for="product in category.products" :key="product.name" :href="product.link" target="_blank" class="product-card">
               <img :src="product.image" :alt="product.name" class="product-img">
               <h3>{{ product.name }}</h3>
@@ -29,6 +32,7 @@ export default {
       categories: [
         {
           name: 'Travel Essentials',
+          slug: 'travel-essentials',
           products: [
             { name: 'Travel Luggage', description: 'Durable carry-on bag', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=travel+luggage' },
             { name: 'Travel Pillow', description: 'Memory foam support', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=travel+pillow' },
@@ -38,6 +42,7 @@ export default {
         },
         {
           name: 'Home Essentials',
+          slug: 'home-essentials',
           products: [
             { name: 'Tineco Floor ONE S5', description: 'Smart Cordless Wet Dry Vacuum Cleaner and Mop for Hard Floors, Digital Display, Long Run Time, Great for Sticky Messes and Pet Hair', image: '/assets/products/tineco-vacuum.jpg', link: 'https://www.amazon.com/s?k=Tineco+Floor+ONE+S5' },
             { name: 'Throw Pillows', description: 'Decorative comfort', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=throw+pillows' },
@@ -47,6 +52,7 @@ export default {
         },
         {
           name: 'Kids Essentials',
+          slug: 'kids-essentials',
           products: [
             { name: 'Baby Stroller', description: 'Lightweight design', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=baby+stroller' },
             { name: 'Educational Toys', description: 'Interactive learning', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=educational+toys' },
@@ -56,6 +62,7 @@ export default {
         },
         {
           name: 'Office Essentials',
+          slug: 'office-essentials',
           products: [
             { name: 'Ergonomic Chair', description: 'Comfortable support', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=ergonomic+chair' },
             { name: 'Desk Organizer', description: 'Keep tidy', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=desk+organizer' },
@@ -65,6 +72,7 @@ export default {
         },
         {
           name: 'Makeup Favs',
+          slug: 'makeup-favs',
           products: [
             { name: 'Brush Set', description: 'Professional quality', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=makeup+brushes' },
             { name: 'LED Mirror', description: 'Adjustable lighting', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=led+mirror' },
@@ -74,6 +82,7 @@ export default {
         },
         {
           name: 'Beauty Essentials',
+          slug: 'beauty-essentials',
           products: [
             { name: 'Beauty Pie C-Wave LED Glove', description: 'Rejuvenating LED Treatment for Hands – Red + Near-Infrared Light Therapy for Age Spots, Pigmentation & Firming', image: '/assets/products/beauty-pie-led-glove.jpg', link: 'https://www.amazon.com/dp/B0FQJYSV7L' },
             { name: 'Moisturizer', description: 'Hydrating formula', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=moisturizer' },
@@ -83,6 +92,7 @@ export default {
         },
         {
           name: 'Kitchen Essentials',
+          slug: 'kitchen-essentials',
           products: [
             { name: 'Lefton Pull-Down Kitchen Faucet', description: 'Pull-Down Kitchen Faucet with Temperature Display in Fahrenheit, 3 Water Outlet Modes, Matte Black', image: '/assets/products/kitchen-faucet.jpg', link: 'https://www.amazon.com/dp/B0FC1TR2FM' },
             { name: 'Jenaluca Herb Scissors', description: 'Herb Scissors with 5 Stainless Steel Blades, Cleaning Comb & Protective Cover', image: '/assets/products/herb-scissors.jpg', link: 'https://www.amazon.com/Jenaluca-Herb-Scissors-Blades-Cover/dp/B00LRKMK96/' },
@@ -92,6 +102,7 @@ export default {
         },
         {
           name: 'Car Essentials',
+          slug: 'car-essentials',
           products: [
             { name: 'Phone Mount', description: 'Dashboard mount', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=car+phone+mount' },
             { name: 'Air Freshener', description: 'Long-lasting scent', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=air+freshener' },
@@ -122,21 +133,63 @@ export default {
 }
 
 .category-block {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
-.category-block h2 {
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.category-header h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   font-weight: 400;
-  margin-bottom: 40px;
   color: var(--text);
 }
 
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+.see-more-link {
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.see-more-link:hover {
+  opacity: 0.7;
+}
+
+/* Horizontal scroll row */
+.scroll-row {
+  overflow-x: auto;
+  padding: 0 60px 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.scroll-row::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scroll-row::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-row::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 2px;
+}
+
+.scroll-inner {
+  display: flex;
+  gap: 24px;
+  width: max-content;
 }
 
 .product-card {
@@ -144,33 +197,38 @@ export default {
   color: inherit;
   transition: transform 0.3s;
   display: block;
+  width: 260px;
+  flex-shrink: 0;
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 
 .product-img {
   width: 100%;
-  height: 250px;
+  height: 240px;
   object-fit: contain;
   background: #ffffff;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   border-radius: 4px;
   padding: 12px;
+  border: 1px solid #f0f0f0;
 }
 
 .product-card h3 {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 8px;
   color: var(--text);
   font-weight: 600;
+  line-height: 1.4;
 }
 
 .product-card p {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-light);
   margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 .cta {
@@ -186,13 +244,20 @@ export default {
     width: 100%;
   }
 
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+  .scroll-row {
+    padding: 0 20px 16px;
+  }
+
+  .product-card {
+    width: 200px;
   }
 
   .product-img {
     height: 180px;
+  }
+
+  .category-header h2 {
+    font-size: 26px;
   }
 }
 </style>
