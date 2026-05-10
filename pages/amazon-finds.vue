@@ -154,7 +154,7 @@ export default {
   width: 100%;
   height: 250px;
   object-fit: contain;
-  background: #f8f8f8;
+  background: #ffffff;
   margin-bottom: 16px;
   border-radius: 4px;
   padding: 12px;
