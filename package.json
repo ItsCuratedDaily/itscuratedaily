@@ -1,0 +1,22 @@
+{
+  "name": "itscuratedaily-vercel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "generate": "nuxt generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "^3.9.0",
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest"
+  }
+}
