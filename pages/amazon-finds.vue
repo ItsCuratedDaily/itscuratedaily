@@ -8,17 +8,17 @@
       <div v-for="category in categories" :key="category.name" class="category-block">
         <div class="category-header wrap">
           <h2>{{ category.name }}</h2>
-          <a :href="'/amazon-finds/' + category.slug" class="see-more-link">See More {{ category.name }} →</a>
         </div>
-        <div class="scroll-row">
-          <div class="scroll-inner">
-            <a v-for="product in category.products" :key="product.name" :href="product.link" target="_blank" class="product-card">
-              <img :src="product.image" :alt="product.name" class="product-img">
-              <h3>{{ product.name }}</h3>
-              <p>{{ product.description }}</p>
-              <span class="cta">View on Amazon →</span>
-            </a>
-          </div>
+        <div class="products-grid wrap">
+          <a v-for="product in category.products.slice(0, 4)" :key="product.name" :href="product.link" target="_blank" class="product-card">
+            <img :src="product.image" :alt="product.name" class="product-img">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <span class="cta">View on Amazon →</span>
+          </a>
+        </div>
+        <div class="see-more-row wrap">
+          <a :href="'/amazon-finds/' + category.slug" class="see-more-link">See More {{ category.name }} →</a>
         </div>
       </div>
     </section>
@@ -154,9 +154,6 @@ export default {
 }
 
 .category-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -167,6 +164,19 @@ export default {
   color: var(--text);
 }
 
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.see-more-row {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
 .see-more-link {
   font-size: 13px;
   color: var(--accent);
@@ -174,7 +184,6 @@ export default {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  white-space: nowrap;
   transition: opacity 0.3s;
 }
 
@@ -182,40 +191,11 @@ export default {
   opacity: 0.7;
 }
 
-/* Horizontal scroll row */
-.scroll-row {
-  overflow-x: auto;
-  padding: 0 60px 20px;
-  scrollbar-width: thin;
-  scrollbar-color: #ddd transparent;
-}
-
-.scroll-row::-webkit-scrollbar {
-  height: 4px;
-}
-
-.scroll-row::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scroll-row::-webkit-scrollbar-thumb {
-  background: #ddd;
-  border-radius: 2px;
-}
-
-.scroll-inner {
-  display: flex;
-  gap: 24px;
-  width: max-content;
-}
-
 .product-card {
   text-decoration: none;
   color: inherit;
   transition: transform 0.3s;
   display: block;
-  width: 260px;
-  flex-shrink: 0;
 }
 
 .product-card:hover {
@@ -224,7 +204,7 @@ export default {
 
 .product-img {
   width: 100%;
-  height: 240px;
+  height: 260px;
   object-fit: contain;
   background: #ffffff;
   margin-bottom: 14px;
@@ -261,12 +241,9 @@ export default {
     width: 100%;
   }
 
-  .scroll-row {
-    padding: 0 20px 16px;
-  }
-
-  .product-card {
-    width: 200px;
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .product-img {
