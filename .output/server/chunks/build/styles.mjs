@@ -1,7 +1,8 @@
 const interopDefault = r => r.default || r || [];
 const styles = {
-  "pages/index.vue": () => import('./index-styles.BKaDc4Dy.mjs').then(interopDefault),
-  "pages/index.vue?vue&type=style&index=0&scoped=fde692a6&lang.css": () => import('./index-styles.BKaDc4Dy.mjs').then(interopDefault),
+  "pages/index.vue": () => import('./index-styles.C7uMAuMH.mjs').then(interopDefault),
+  "pages/index.vue?vue&type=style&index=1&scoped=ab3463af&lang.css": () => import('./index-styles.rhUbq5Vq.mjs').then(interopDefault),
+  "pages/index.vue?vue&type=style&index=0&lang.css": () => import('./index-styles.COSmjegT.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-404.vue": () => import('./error-404-styles.CiJjK6WX.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-500.vue": () => import('./error-500-styles.ulHNpcF1.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-404.vue?vue&type=style&index=0&scoped=1bd9e11a&lang.css": () => import('./error-404-styles.CiJjK6WX.mjs').then(interopDefault),

@@ -1,7 +1,8 @@
 const interopDefault = r => r.default || r || []
 export default {
-  "pages/index.vue": () => import('./_nuxt/index-styles.BKaDc4Dy.mjs').then(interopDefault),
-  "pages/index.vue?vue&type=style&index=0&scoped=fde692a6&lang.css": () => import('./_nuxt/index-styles.BKaDc4Dy.mjs').then(interopDefault),
+  "pages/index.vue": () => import('./_nuxt/index-styles.C7uMAuMH.mjs').then(interopDefault),
+  "pages/index.vue?vue&type=style&index=1&scoped=ab3463af&lang.css": () => import('./_nuxt/index-styles.rhUbq5Vq.mjs').then(interopDefault),
+  "pages/index.vue?vue&type=style&index=0&lang.css": () => import('./_nuxt/index-styles.COSmjegT.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-404.vue": () => import('./_nuxt/error-404-styles.CiJjK6WX.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-500.vue": () => import('./_nuxt/error-500-styles.ulHNpcF1.mjs').then(interopDefault),
   "node_modules/nuxt/dist/app/components/error-404.vue?vue&type=style&index=0&scoped=1bd9e11a&lang.css": () => import('./_nuxt/error-404-styles.CiJjK6WX.mjs').then(interopDefault),

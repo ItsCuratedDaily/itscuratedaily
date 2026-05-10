@@ -2,14 +2,19 @@
   <div class="home">
     <nav class="nav">
       <div class="nav-left">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#packages" class="nav-link">Packages</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <button class="hamburger" @click="toggleMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
       <div class="nav-center">
         <div class="logo">ItsCuratedDaily</div>
       </div>
-      <div class="nav-right"></div>
+      <div class="nav-right">
+        <span class="nav-icon">👤</span>
+        <span class="nav-icon">🛍️</span>
+      </div>
     </nav>
 
     <section class="hero">
@@ -163,13 +168,25 @@
 
 <script>
 export default {
+  data() {
+    return {
+      menuOpen: false
+    }
+  },
   methods: {
     goTo(id) {
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    },
+    toggleMenu() {
+      this.menuOpen = !this.menuOpen
     }
   }
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+</style>
 
 <style scoped>
 :root {
@@ -204,34 +221,41 @@ body {
 .nav {
   background: white;
   border-bottom: 1px solid var(--border);
-  padding: 30px 60px;
+  padding: 24px 40px;
   position: sticky;
   top: 0;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .nav-left {
   flex: 1;
   display: flex;
-  gap: 40px;
+  align-items: center;
 }
 
-.nav-link {
-  font-size: 14px;
-  text-decoration: none;
-  color: var(--text-light);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: color 0.3s;
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 30px;
+  height: 24px;
+  justify-content: center;
 }
 
-.nav-link:hover {
-  color: var(--accent);
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-dark);
+  transition: all 0.3s;
 }
 
 .nav-center {
@@ -240,15 +264,25 @@ body {
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 4px;
   color: var(--text-dark);
+  text-transform: uppercase;
 }
 
 .nav-right {
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* Hero */
