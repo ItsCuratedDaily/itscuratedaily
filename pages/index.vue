@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <AppHeader />
 
     <!-- Hero -->
     <section class="hero">
@@ -133,66 +132,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-grid">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <h2>ItsCuratedDaily</h2>
-        </div>
-        
-        <div class="footer-grid-cols">
-          <div class="footer-col">
-            <h3>READ</h3>
-            <ul>
-              <li><a href="#blog">From My Blog</a></li>
-              <li><a href="#recent">Recent Posts</a></li>
-              <li><a href="#about">About</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>SHOP</h3>
-            <ul>
-              <li><a href="#amazon">Amazon Finds</a></li>
-              <li><a href="#target">Target Finds</a></li>
-              <li><a href="#collab">Collaborations</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>SUPPORT</h3>
-            <ul>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#faq">Advertise With Us</a></li>
-              <li><a href="#contact">Press Kit</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>EXPLORE</h3>
-            <ul>
-              <li><a href="#about">Meet Elen</a></li>
-              <li><a href="#why">Why Collaborate</a></li>
-              <li><a href="https://instagram.com/itscurateddaily" target="_blank">Instagram</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="footer-bottom">
-          <div class="footer-socials">
-            <a href="https://instagram.com/itscurateddaily" target="_blank" class="social-icon">📷</a>
-            <a href="#" target="_blank" class="social-icon">📌</a>
-          </div>
-          <p class="footer-copy">&copy; 2026 <a href="/">ItsCuratedDaily</a></p>
-          <p class="footer-credit">Site by <a href="#">Design</a></p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
 <script>
-export default {
-  components: {
-    AppHeader: () => import('~/components/AppHeader.vue')
-  }
-}
+export default {}
 </script>
 
 <style>
