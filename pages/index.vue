@@ -19,6 +19,7 @@
 
     <!-- Mobile Menu -->
     <div v-if="menuOpen" class="mobile-menu">
+      <a href="#why" @click="menuOpen = false">Why Collaborate</a>
       <a href="#collab" @click="menuOpen = false">Collaborations</a>
       <a href="#amazon" @click="menuOpen = false">Amazon Finds</a>
       <a href="#target" @click="menuOpen = false">Target Finds</a>
@@ -30,6 +31,36 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-bg"></div>
+    </section>
+
+    <!-- Why Collaborate -->
+    <section class="section why-bg" id="why">
+      <div class="wrap">
+        <h2>Why Collaborate With Us?</h2>
+        <p class="section-desc">Partner with ItsCuratedDaily for authentic, premium content</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-num">01</div>
+            <h3>Authentic Audience</h3>
+            <p>Real people with real purchasing power who trust recommendations.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-num">02</div>
+            <h3>Premium Aesthetic</h3>
+            <p>High-quality, luxury content that elevates your brand's presence.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-num">03</div>
+            <h3>Conversion Focus</h3>
+            <p>Amazon affiliate expertise with proven conversion rates.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-num">04</div>
+            <h3>Full Transparency</h3>
+            <p>Real-time analytics and performance tracking for every campaign.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Recent Collaborations -->
@@ -138,11 +169,12 @@
             </ul>
           </div>
           <div class="footer-column">
-            <h3>Shop</h3>
+            <h3>Explore</h3>
             <ul>
+              <li><a href="#why">Why Collaborate</a></li>
               <li><a href="#amazon">Amazon Finds</a></li>
               <li><a href="#target">Target Finds</a></li>
-              <li><a href="#recent">Latest Posts</a></li>
+              <li><a href="#blog">From my Blog</a></li>
             </ul>
           </div>
           <div class="footer-column">
@@ -381,6 +413,50 @@ body {
 
 .recent-bg {
   background-color: #f8f6f3;
+}
+
+.why-bg {
+  background-color: #f0ebe5;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  text-align: center;
+}
+
+.feature-num {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 /* Meet Elen */
