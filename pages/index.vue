@@ -30,7 +30,7 @@
 
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-bg"></div>
+      <img src="/assets/hero.jpg" alt="ItsCuratedDaily" class="hero-bg">
     </section>
 
     <!-- Why Collaborate -->
@@ -365,8 +365,15 @@ body {
 
 /* Hero */
 .hero {
-  height: 400px;
-  background-color: #d9d9d9;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Sections */
