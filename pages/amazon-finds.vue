@@ -84,7 +84,7 @@ export default {
         {
           name: 'Kitchen Essentials',
           products: [
-            { name: 'Cookware Set', description: 'Stainless steel', image: '/assets/post-1.jpg', link: 'https://amazon.com/s?k=cookware+set' },
+            { name: 'Lefton Pull-Down Kitchen Faucet', description: 'Temperature display + 3 spray modes, matte black', image: '/assets/products/kitchen-faucet.jpg', link: 'https://www.amazon.com/dp/B0FC1TR2FM' },
             { name: 'Knife Set', description: 'Professional grade', image: '/assets/post-2.jpg', link: 'https://amazon.com/s?k=knife+set' },
             { name: 'Blender', description: 'High-powered', image: '/assets/post-3.jpg', link: 'https://amazon.com/s?k=blender' },
             { name: 'Food Storage', description: 'Glass containers', image: '/assets/post-4.jpg', link: 'https://amazon.com/s?k=food+storage' }
