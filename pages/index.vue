@@ -145,29 +145,38 @@
       </div>
     </section>
 
-    <footer>
-      <div class="wrap">
-        <div class="footer-grid">
-          <div>
-            <h4>ItsCuratedDaily</h4>
-            <p>Premium social media content creation.</p>
-          </div>
-          <div>
-            <h4>Links</h4>
+    <footer class="footer-new">
+      <div class="footer-content">
+        <div class="footer-image">
+          <img src="/assets/profile.jpg" alt="Elen Hovsepian">
+        </div>
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>About</h3>
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#packages">Packages</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#packages">Services</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
-          <div>
-            <h4>Follow</h4>
+          <div class="footer-column">
+            <h3>Packages</h3>
+            <ul>
+              <li><a href="#packages">Bronze</a></li>
+              <li><a href="#packages">Silver</a></li>
+              <li><a href="#packages">Gold</a></li>
+              <li><a href="#contact">Custom</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Connect</h3>
             <ul>
               <li><a href="https://instagram.com/itscurateddaily" target="_blank">Instagram</a></li>
+              <li><a href="#contact">Email</a></li>
+              <li><a href="/">ItsCuratedDaily.com</a></li>
             </ul>
           </div>
         </div>
-        <p class="copy">&copy; 2026 ItsCuratedDaily. All rights reserved.</p>
       </div>
     </footer>
   </div>
@@ -653,56 +662,71 @@ body {
 }
 
 /* Footer */
-footer {
+.footer-new {
   background: var(--primary);
-  border-top: 1px solid var(--border);
-  padding: 60px 0 30px;
+  padding: 80px 60px;
+  margin-top: 80px;
 }
 
-.footer-grid {
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 100px;
+  align-items: flex-start;
+}
+
+.footer-image {
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.footer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--border);
 }
 
-footer h4 {
-  font-size: 13px;
-  font-weight: 700;
+.footer-column h3 {
+  font-family: 'Playfair Display', 'Didot', serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  color: var(--text-dark);
+  margin-bottom: 24px;
 }
 
-footer p {
-  font-size: 14px;
-  color: var(--text-light);
-}
-
-footer ul {
+.footer-column ul {
   list-style: none;
+  padding: 0;
 }
 
-footer li {
-  margin-bottom: 10px;
+.footer-column li {
+  margin-bottom: 12px;
 }
 
-footer a {
-  font-size: 14px;
+.footer-column a {
+  font-size: 13px;
   color: var(--text-light);
   text-decoration: none;
   transition: color 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-footer a:hover {
-  color: var(--accent);
-}
-
-.copy {
-  text-align: center;
-  font-size: 12px;
-  color: #999;
+.footer-column a:hover {
+  color: var(--text-dark);
 }
 
 @media (max-width: 768px) {
