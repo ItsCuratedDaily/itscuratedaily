@@ -205,14 +205,18 @@ html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
 
 .hero-section {
   position: relative;
-  height: 600px;
+  height: 700px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
 }
 
 .hero-bg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -405,7 +409,7 @@ html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
   .nav { padding: 15px 20px; }
   .products-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
   .product-img { height: 180px; }
-  .hero-section { height: 400px; }
+  .hero-section { height: 500px; }
   
   .footer-grid {
     padding: 40px 15px;
