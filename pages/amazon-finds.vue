@@ -107,16 +107,14 @@ export default {
 
 <style scoped>
 .amazon-hero {
-  height: 700px;
-  overflow: hidden;
-  background: white;
+  width: 100%;
+  line-height: 0;
 }
 
 .amazon-hero-img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  height: auto;
+  display: block;
 }
 
 .amazon-content {
@@ -183,7 +181,7 @@ export default {
 
 @media (max-width: 768px) {
   .amazon-hero {
-    height: 400px;
+    width: 100%;
   }
 
   .products-grid {
