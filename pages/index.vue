@@ -66,76 +66,60 @@
     <!-- Recent Collaborations -->
     <section class="section collab-bg" id="collab">
       <div class="wrap">
-        <div class="section-header">
-          <div>
-            <h2>Recent Collaborations</h2>
-            <p class="section-desc">Featured brand partnerships</p>
-          </div>
-          <a href="/collaborations" class="see-more">See More →</a>
-        </div>
-        <div class="grid">
+        <h2>Recent Collaborations</h2>
+        <p class="section-desc">Featured brand partnerships</p>
+        <div class="grid grid-with-button">
           <img src="/assets/post-1.jpg" alt="Collaboration 1">
           <img src="/assets/post-2.jpg" alt="Collaboration 2">
           <img src="/assets/post-3.jpg" alt="Collaboration 3">
           <img src="/assets/post-4.jpg" alt="Collaboration 4">
         </div>
+        <a href="/collaborations" class="see-more-btn">See More Collaborations</a>
       </div>
     </section>
 
     <!-- Amazon Finds -->
     <section class="section amazon-bg" id="amazon">
       <div class="wrap">
-        <div class="section-header">
-          <div>
-            <h2>Amazon Finds</h2>
-            <p class="section-desc">Carefully curated products we love</p>
-          </div>
-          <a href="/amazon-finds" class="see-more">See More →</a>
-        </div>
-        <div class="grid">
+        <h2>Amazon Finds</h2>
+        <p class="section-desc">Carefully curated products we love</p>
+        <div class="grid grid-with-button">
           <img src="/assets/post-1.jpg" alt="Amazon Find 1">
           <img src="/assets/post-2.jpg" alt="Amazon Find 2">
           <img src="/assets/post-3.jpg" alt="Amazon Find 3">
           <img src="/assets/post-4.jpg" alt="Amazon Find 4">
         </div>
+        <a href="/amazon-finds" class="see-more-btn">See More Amazon Finds</a>
       </div>
     </section>
 
     <!-- Target Finds -->
     <section class="section target-bg" id="target">
       <div class="wrap">
-        <div class="section-header">
-          <div>
-            <h2>Target Finds</h2>
-            <p class="section-desc">Trending picks from Target</p>
-          </div>
-          <a href="/target-finds" class="see-more">See More →</a>
-        </div>
-        <div class="grid">
+        <h2>Target Finds</h2>
+        <p class="section-desc">Trending picks from Target</p>
+        <div class="grid grid-with-button">
           <img src="/assets/post-1.jpg" alt="Target Find 1">
           <img src="/assets/post-2.jpg" alt="Target Find 2">
           <img src="/assets/post-3.jpg" alt="Target Find 3">
           <img src="/assets/post-4.jpg" alt="Target Find 4">
         </div>
+        <a href="/target-finds" class="see-more-btn">See More Target Finds</a>
       </div>
     </section>
 
     <!-- From my Blog -->
     <section class="section blog-bg" id="blog">
       <div class="wrap">
-        <div class="section-header">
-          <div>
-            <h2>From my Blog</h2>
-            <p class="section-desc">Stories, insights, and inspiration</p>
-          </div>
-          <a href="/blog" class="see-more">See More →</a>
-        </div>
-        <div class="grid">
+        <h2>From my Blog</h2>
+        <p class="section-desc">Stories, insights, and inspiration</p>
+        <div class="grid grid-with-button">
           <img src="/assets/post-1.jpg" alt="Blog 1">
           <img src="/assets/post-2.jpg" alt="Blog 2">
           <img src="/assets/post-3.jpg" alt="Blog 3">
           <img src="/assets/post-4.jpg" alt="Blog 4">
         </div>
+        <a href="/blog" class="see-more-btn">See More Blog Posts</a>
       </div>
     </section>
 
@@ -162,19 +146,15 @@
     <!-- Recent Posts -->
     <section class="section recent-bg" id="recent">
       <div class="wrap">
-        <div class="section-header">
-          <div>
-            <h2>Recent Posts</h2>
-            <p class="section-desc">Latest updates from ItsCuratedDaily</p>
-          </div>
-          <a href="/recent-posts" class="see-more">See More →</a>
-        </div>
-        <div class="grid">
+        <h2>Recent Posts</h2>
+        <p class="section-desc">Latest updates from ItsCuratedDaily</p>
+        <div class="grid grid-with-button">
           <img src="/assets/post-1.jpg" alt="Recent 1">
           <img src="/assets/post-2.jpg" alt="Recent 2">
           <img src="/assets/post-3.jpg" alt="Recent 3">
           <img src="/assets/post-4.jpg" alt="Recent 4">
         </div>
+        <a href="/recent-posts" class="see-more-btn">See More Recent Posts</a>
       </div>
     </section>
 
@@ -445,6 +425,33 @@ body {
 
 .grid img:hover {
   transform: scale(1.05);
+}
+
+.grid-with-button {
+  margin-bottom: 40px;
+}
+
+.see-more-btn {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 0;
+  transition: opacity 0.3s;
+}
+
+.see-more-btn:hover {
+  opacity: 0.7;
+}
+
+.wrap::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 /* Background colors for each section */
@@ -728,6 +735,11 @@ body {
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .see-more-btn {
+    font-size: 12px;
+    margin-top: 20px;
   }
 
   .about-grid {
