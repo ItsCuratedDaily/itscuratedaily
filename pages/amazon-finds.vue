@@ -174,7 +174,8 @@ export default {
 .see-more-row {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .see-more-link {
